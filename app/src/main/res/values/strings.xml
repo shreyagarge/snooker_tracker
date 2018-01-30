@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SnookerTracker</string>
+    <string name="inputmessage">Input names of the players!</string>
+    <string name="team1">Team 1</string>
+    <string name="team2">Team 2</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="startgame">Start new game</string>
+    <string name="currentplayer">Current Player :</string>
+    <string name="submit">SUBMIT</string>
+    <string name="curplay"></string>
+    <string name="name1"></string>
+    <string name="name2"></string>
+    <string name="name3"></string>
+    <string name="name4"></string>
+    <string name="score1">Current Player Score : </string>
+    <string name="score2"></string>
+    <string name="score3"></string>
+    <string name="score4"></string>
+    <string name="switchp">Switch current player</string>
+    <string name="title_activity_game_screen">gameScreen</string>
+    <string name="endandcalc">End frame and show scores</string>
+    <string name="winn">Winning Team : </string>
+    <string name="highsc">Highest Score :</string>
+    <string name="tot">Total</string>
+    <string name="teamwin"></string>
+    <string name="scorebrd">Score Board</string>
+    <string name="foul">Foul</string>
+</resources>

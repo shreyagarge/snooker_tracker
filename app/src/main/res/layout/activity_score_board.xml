@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snookertracker.scoreBoard"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/result_disp2"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:text="@string/teamwin"
+        app:layout_constraintBottom_toTopOf="@+id/result_disp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/tot2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:text="@string/highsc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toStartOf="@+id/result_disp2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tot1" />
+
+    <TextView
+        android:id="@+id/namet_2"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:text="@string/name2"
+        app:layout_constraintBottom_toTopOf="@+id/namet_4"
+        app:layout_constraintEnd_toStartOf="@+id/score2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/score1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/score3"
+        app:layout_constraintEnd_toStartOf="@+id/namet_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/namet_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/score4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/namet_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/namet_3"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:text="@string/name3"
+        app:layout_constraintBottom_toTopOf="@+id/tot1"
+        app:layout_constraintEnd_toStartOf="@+id/score3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namet_1" />
+
+    <TextView
+        android:id="@+id/score3"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/tot1"
+        app:layout_constraintEnd_toStartOf="@+id/namet_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/namet_3"
+        app:layout_constraintTop_toBottomOf="@+id/score1" />
+
+    <TextView
+        android:id="@+id/namet_4"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:text="@string/name4"
+        app:layout_constraintBottom_toTopOf="@+id/tot2"
+        app:layout_constraintEnd_toStartOf="@+id/score4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/score3"
+        app:layout_constraintTop_toBottomOf="@+id/namet_2" />
+
+    <TextView
+        android:id="@+id/score4"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/tot2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/namet_4"
+        app:layout_constraintTop_toBottomOf="@+id/score2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:text="@string/team2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/score2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:text="@string/team1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/score1"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/namet_1"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/namet_3"
+        app:layout_constraintEnd_toStartOf="@+id/score1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:text="@string/winn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/start_new"
+        app:layout_constraintEnd_toStartOf="@+id/result_disp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/result_disp"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:text="@string/teamwin"
+        app:layout_constraintBottom_toTopOf="@+id/start_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/result_disp2" />
+
+    <Button
+        android:id="@+id/start_new"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:onClick="newGame"
+        android:text="@string/startgame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        android:text="@string/scorebrd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="@string/tot"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/tot1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namet_3" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="@string/tot"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/tot2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tot1"
+        app:layout_constraintTop_toBottomOf="@+id/score3" />
+
+    <TextView
+        android:id="@+id/tot1"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/score3" />
+
+    <TextView
+        android:id="@+id/tot2"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/result_disp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/score4" />
+</android.support.constraint.ConstraintLayout>
