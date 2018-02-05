@@ -26,4 +26,18 @@
     <string name="teamwin"></string>
     <string name="scorebrd">Score Board</string>
     <string name="foul">Foul</string>
+    <string-array name="sizes">
+        <item>10</item>
+        <item>12.5</item>
+        <item>15</item>
+        <item>17.5</item>
+        <item>20</item>
+        <item>22.5</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="colours">
+        <item>RED</item>
+        <item>BLUE</item>
+        <item>GRAY</item>
+    </string-array>
 </resources>

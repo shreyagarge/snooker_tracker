@@ -1,21 +1,23 @@
 package com.example.snookertracker;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import java.util.Arrays;
 
 public class scoreBoard extends AppCompatActivity {
     String message;
-    String[] names;
+    String[] names={"a","b","c","d"};
     int REQUEST_CODE=1234;
    // String[] scores={"0","0","0","0"};
     public static final String EXTRA_MESSAGE_2="com.example.snookertracker.MESSAGE";
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        String[] scores;
+        String[] scores={"0","0","0","0"};
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
             if (data.hasExtra("returnKey1")) {
                 String scorestring = data.getExtras().getString("returnKey1");
@@ -66,28 +68,30 @@ public class scoreBoard extends AppCompatActivity {
         textView3.setText(this.names[2]);
         TextView textView4 = findViewById(R.id.namet_4);
         textView4.setText(this.names[3]);
-//        TextView textV1 = findViewById(R.id.score1);
-//        textV1.setText(this.scores[0]);
-//        TextView textV2 = findViewById(R.id.score2);
-//        textV2.setText(this.scores[1]);
-//        TextView textV3 = findViewById(R.id.score3);
-//        textV3.setText(this.scores[2]);
-//        TextView textV4 = findViewById(R.id.score4);
-//        textV4.setText(this.scores[3]);
-//        TextView textView5 = findViewById(R.id.tot1);
-//        int team1 = Integer.parseInt(this.scores[0])+Integer.parseInt(this.scores[2]);
-//        textView5.setText(Integer.toString(team1));
-//        int team2 = Integer.parseInt(this.scores[1])+Integer.parseInt(this.scores[3]);
-//        TextView tv6 = findViewById(R.id.tot2);
-//        tv6.setText(Integer.toString(team2));
-//        int largest = 0;
-//        for ( int i = 1; i < this.scores.length; i++ )
-//        {
-//            if ( Integer.parseInt(this.scores[i]) > Integer.parseInt(this.scores[largest]) ) largest = i;
-//        }
-//
-//        TextView tv5 = findViewById(R.id.result_disp2);
-//        tv5.setText(names[largest]);
+        ConstraintLayout lay = findViewById(R.id.clay2);
+
+
+        Globals g = (Globals)getApplication();
+        int data=g.getColid();
+
+        if(data==1) {
+            lay.setBackgroundColor(Color.parseColor("#eec4d7"));
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#eec4d7")));
+
+        }
+        else if(data==2) {
+            lay.setBackgroundColor(Color.CYAN);
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.CYAN));
+
+        }
+        else if(data==3) {
+            lay.setBackgroundColor(Color.LTGRAY);
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.LTGRAY));
+
+        }
+
+
+
 
 
     }

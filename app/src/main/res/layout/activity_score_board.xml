@@ -2,9 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clay2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d1f1f2"
+    android:background="@android:color/background_light"
     tools:context="com.example.snookertracker.scoreBoard"
     tools:layout_editor_absoluteY="81dp">
 
@@ -19,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -114,7 +115,7 @@
         app:layout_constraintStart_toEndOf="@+id/namet_4"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -129,7 +130,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.88" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -154,7 +155,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -195,7 +196,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -209,7 +210,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView13"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
@@ -220,7 +221,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <com.example.snookertracker.CustomTextView
         android:id="@+id/textView14"
         android:layout_width="108dp"
         android:layout_height="wrap_content"

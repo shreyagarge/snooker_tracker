@@ -2,6 +2,9 @@ package com.example.snookertracker;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +38,28 @@ public class gameScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
+
+        ConstraintLayout lay = findViewById(R.id.clay3);
+
+
+        Globals g = (Globals)getApplication();
+        int data=g.getColid();
+
+        if(data==1) {
+            lay.setBackgroundColor(Color.parseColor("#eec4d7"));
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#eec4d7")));
+
+        }
+        else if(data==2) {
+            lay.setBackgroundColor(Color.CYAN);
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.CYAN));
+
+        }
+        else if(data==3) {
+            lay.setBackgroundColor(Color.LTGRAY);
+            lay.setBackgroundTintList(ColorStateList.valueOf(Color.LTGRAY));
+
+        }
 
         Intent gameintent = getIntent();
         this.message = gameintent.getStringExtra(SetupPlayers.EXTRA_MESSAGE);
