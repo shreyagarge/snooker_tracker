@@ -27,6 +27,7 @@
     <string name="scorebrd">Score Board</string>
     <string name="foul">Foul</string>
     <string-array name="sizes">
+        <item>15</item>
         <item>10</item>
         <item>12.5</item>
         <item>15</item>
